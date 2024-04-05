@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-org_id = "REPLACE_ME" # format "000000000000"
+org_id = "1001720947662" # format "000000000000"
 
-billing_account = "REPLACE_ME" # format "000000-000000-000000"
+billing_account = "01410C-75FC3C-27B241" # format "000000-000000-000000"
 
 // For enabling the automatic groups creation, uncoment the
 // variables and update the values with the group names
 groups = {
-  # create_required_groups = false # Change to true to create the required_groups
-  # create_optional_groups = false # Change to true to create the optional_groups
+   create_required_groups = true # Change to true to create the required_groups
+   create_optional_groups = true # Change to true to create the optional_groups
   # billing_project        = "REPLACE_ME"  # Fill to create required or optional groups
   required_groups = {
     group_org_admins           = "REPLACE_ME" # example "gcp-organization-admins@example.com"
@@ -31,16 +31,16 @@ groups = {
     audit_data_users           = "REPLACE_ME" # example "gcp-audit-data@example.com"
     monitoring_workspace_users = "REPLACE_ME" # example "gcp-monitoring-workspace@example.com"
   }
-  # optional_groups = {
-  #   gcp_security_reviewer      = "" #"gcp_security_reviewer_local_test@example.com"
-  #   gcp_network_viewer         = "" #"gcp_network_viewer_local_test@example.com"
-  #   gcp_scc_admin              = "" #"gcp_scc_admin_local_test@example.com"
-  #   gcp_global_secrets_admin   = "" #"gcp_global_secrets_admin_local_test@example.com"
-  #   gcp_kms_admin              = "" #"gcp_kms_admin_local_test@example.com"
-  # }
+   optional_groups = {
+     gcp_security_reviewer      = "" #"gcp_security_reviewer_local_test@example.com"
+     gcp_network_viewer         = "" #"gcp_network_viewer_local_test@example.com"
+     gcp_scc_admin              = "" #"gcp_scc_admin_local_test@example.com"
+     gcp_global_secrets_admin   = "" #"gcp_global_secrets_admin_local_test@example.com"
+     gcp_kms_admin              = "" #"gcp_kms_admin_local_test@example.com"
+   }
 }
 
-default_region = "us-central1"
+default_region = "europe-west2"
 
 # Optional - for an organization with existing projects or for development/validation.
 # Uncomment this variable to place all the example foundation resources under
